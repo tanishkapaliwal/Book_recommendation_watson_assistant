@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bookby - Your Book Buddy ✨📚✨</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fce3ec, #f9e0f2);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+      color: #fff;
+      padding: 40px 20px 80px;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.2rem;
+    }
+
+    /* Assistant Bear in circle */
+    .assistant-bear {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .assistant-bear img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    main {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: -40px auto 0;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #6a0572;
+      text-align: center;
+    }
+
+    .book-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+
+    .book {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .book:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+    }
+
+    .book img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .book-title {
+      padding: 15px;
+      text-align: center;
+      font-weight: 600;
+      color: #a83279;
+    }
+
+    .section {
+      margin-bottom: 60px;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .section p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    .why-list {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 20px;
+    }
+
+    .why-list li {
+      margin-bottom: 10px;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    .why-list li::before {
+      content: '✨';
+      color: #a83279;
+      position: absolute;
+      left: 0;
+    }
+
+    .articles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .article-card {
+      background: #f9e0f2;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .article-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    }
+
+    .article-card a {
+      text-decoration: none;
+      color: #6a0572;
+      font-weight: 600;
+    }
+
+    footer {
+      background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+      color: #fff;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>✨ Bookby ✨</h1>
+    <p>Find your next favorite book — beautifully recommended! 📚</p>
+    <div class="assistant-bear">
+      <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Bookby Virtual Bear Assistant">
+    </div>
+  </header>
+
+  <main>
+    <h2>📚 Discover Top Picks ✨</h2>
+    <div class="book-gallery">
+      <div class="book">
+        <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Book 1">
+        <div class="book-title">Midnight Library</div>
+      </div>
+      <div class="book">
+        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Book 2">
+        <div class="book-title">Dreamscape</div>
+      </div>
+      <div class="book">
+        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Book 3">
+        <div class="book-title">Serendipity Tales</div>
+      </div>
+      <div class="book">
+        <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Book 4">
+        <div class="book-title">Pastel Pages</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>📖 Why Should You Read? ✨</h2>
+      <p>Reading unlocks the doors to imagination, knowledge, and endless adventures. 📚✨ It helps you grow wiser, kinder, and dream bigger with every page you turn!</p>
+    </div>
+
+    <div class="section">
+      <h2>🌟 Benefits of Reading 📚</h2>
+      <ul class="why-list">
+        <li>Boosts creativity and imagination</li>
+        <li>Improves vocabulary and communication</li>
+        <li>Reduces stress and helps you relax</li>
+        <li>Enhances focus and discipline</li>
+        <li>Strengthens memory and analytical skills</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>📰 Top 10 Articles for Book Lovers ✨</h2>
+      <div class="articles">
+        <div class="article-card"><a href="https://www.nytimes.com/guides/books/how-to-read-more" target="_blank">How to Read More Books (NY Times)</a></div>
+        <div class="article-card"><a href="https://www.healthline.com/health/benefits-of-reading-books" target="_blank">11 Benefits of Reading Books (Healthline)</a></div>
+        <div class="article-card"><a href="https://www.bbc.com/future/article/20190319-why-reading-matters" target="_blank">Why Reading Matters (BBC)</a></div>
+        <div class="article-card"><a href="https://jamesclear.com/reading" target="_blank">The Importance of Reading (James Clear)</a></div>
+        <div class="article-card"><a href="https://medium.com/personal-growth/why-you-should-read-every-day-ccdf6f1b4b8a" target="_blank">Why You Should Read Every Day (Medium)</a></div>
+        <div class="article-card"><a href="https://www.inc.com/christina-desmarais/10-ways-reading-more-makes-you-a-better-person.html" target="_blank">10 Ways Reading Makes You Better (Inc.)</a></div>
+        <div class="article-card"><a href="https://www.success.com/why-you-should-read-every-day/" target="_blank">Why You Should Read Daily (Success)</a></div>
+        <div class="article-card"><a href="https://www.brainpickings.org/2013/05/24/how-to-read-a-book/" target="_blank">How to Read a Book (Brain Pickings)</a></div>
+        <div class="article-card"><a href="https://www.huffpost.com/entry/why-reading-is-important_b_12684850" target="_blank">Why Reading is Important (HuffPost)</a></div>
+        <div class="article-card"><a href="https://www.lifehack.org/articles/lifestyle/10-benefits-reading-why-you-should-read-everyday.html" target="_blank">10 Benefits of Reading (Lifehack)</a></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Bookby ✨ | Happy Reading 📚✨
+  </footer>
+
+  <!-- Watson Assistant Script -->
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "b8e9eb4f-529e-4e05-942c-e653b6954783",
+      region: "au-syd",
+      serviceInstanceID: "8335ac12-2274-4272-8d51-29e8aae0728d",
+      onLoad: async (instance) => { await instance.render(); }
+    };
+    setTimeout(function(){
+      const t = document.createElement('script');
+      t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + 
+               (window.watsonAssistantChatOptions.clientVersion || 'latest') + 
+               "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+
+</body>
+</html>
